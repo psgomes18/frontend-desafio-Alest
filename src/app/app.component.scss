@@ -1,0 +1,133 @@
+svg-inline--fa fa-edit fa-w-18 {
+
+}
+.container-app {
+    width: 100%;
+    margin: 0; 
+
+    .container-app__title {
+            display: flex;
+            background-color: rgba(40,39,47,255);
+            align-items: center;
+            justify-content: center;
+            h2 {
+                color: white;
+            }
+    }
+
+    .container-app__searchBar {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        input {
+            background: url("icons/search_white_24dp.svg") no-repeat scroll 7px 7px;
+            padding-left:30px;
+            padding-top: 7px;
+            width: 85%;
+            height: 25px;
+            background-color: rgba(35,34,42,255);
+            border-radius: 5px;
+            border: 1px;
+            color: white;
+
+        }
+        button {
+            width: 15%;
+            margin-left: 15px;
+            background-color: rgba(33,56,202,255);
+            border-radius: 5px;
+            border: 1px;
+            color: white;
+        }
+    }
+    .container-app-createButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            width: 25%;
+            // width: 15%;
+            margin: 15px;
+            height: 33px;
+            background-color: rgba(33,56,202,255);
+            border-radius: 5px;
+            border: 1px;
+            color: white;
+        }
+    }
+
+    .container-app__productList {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        .container-app__productList__item {
+            margin: 30px;
+            margin-top: 20px;
+            width: 100%;
+            height: 100%;
+            // flex-grow: 1;
+            background-color: rgba(35,34,42,255);
+            border-radius: 10px;
+            border: 1px;
+            width: 250px;
+            height: 375px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            .container-app__productList__item__name {
+            
+            margin-top: 20px;
+            height: 10%;
+            color: white;
+                
+            }
+
+            .container-app__productList__item__img {
+                // padding: -150px;
+                img {
+                    border-radius: 50%;
+                    width: 200px;
+                    height: auto;
+                }
+            }
+            .container-app__productList__item__price {
+                width: 100%;
+                text-align: center;
+                color: white;
+
+            }
+            .container-app__productList__item__buttonBar {
+                width: 100%;
+                display: flex;
+                border: 1px;
+
+                .container-app__productList__item__buttonBar__editButton {
+                    width: 50%;
+                    background: url("icons/edit-solid.svg") no-repeat scroll 55px 3px;
+                    padding-left:30px;
+                    padding-top:15px;
+                    width: 20px;
+                    height: 100%;
+                    background-color: #2039ca;
+                    flex-grow: 1;
+                    border-bottom-left-radius: 15px;
+                }
+                .container-app__productList__item__buttonBar__deleteButton {
+                    width: 50%;
+                    background: url("icons/delete_white.svg") no-repeat scroll 55px 3px;
+                    padding-left:30px;
+                    padding-top:15px;
+                    width: 20px;
+                    height: 100%;
+                    background-color: #2039ca;
+                    flex-grow: 1;
+                    border-bottom-right-radius: 15px;
+                }
+            
+            }
+        }
+    }
+}

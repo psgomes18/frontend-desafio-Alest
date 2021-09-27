@@ -1,0 +1,17 @@
+<div mat-dialog-content>
+  <p>Produto: {{product.id ? product.brand : ""}}</p>
+    <mat-label>Marca do produto: </mat-label>
+    <input matInput [(ngModel)]="data.brand">
+    <mat-label>Modelo: </mat-label>
+    <input matInput [(ngModel)]="data.model">
+    <mat-label>Cor: </mat-label>
+    <input matInput [(ngModel)]="data.color">
+    <mat-label>Preço: </mat-label>
+    <input matInput [(ngModel)]="data.price">
+    <mat-label>Imagem: </mat-label>
+    <input matInput [(ngModel)]="data.image">
+</div>
+<div mat-dialog-actions class="buttons">
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button (click)="upsertProduct()" cdkFocusInitial>{{product.id ? "Atualizar" : "Salvar"}}</button>
+</div>
